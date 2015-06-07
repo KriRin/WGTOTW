@@ -44,9 +44,11 @@ if($user == true) {
         if (count($words) > $count){
         $words = array_slice($words, 0, $count);
         $string = implode(' ', $words);
+        $string = $this->di->textFilter->doFilter($string, 'shortcode, markdown');
         }
         else {
             $string = implode(' ', $words);
+            $string = $this->di->textFilter->doFilter($string, 'shortcode, markdown');
         }
         if($info['posttype'] == 2) {
             $question_link = $this->url->create('posts/viewQuestion/' . $info['QuestionID']);

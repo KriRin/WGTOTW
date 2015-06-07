@@ -4,8 +4,9 @@
     <?php $info = $post->getProperties();?>
     <form method='post'>
         <div class="qcontent nounderline">
+            
             <h3><?=$info['title']?></h3>
-            <p><?=$info['content']?></p>
+            <p><?=$this->di->textFilter->doFilter($info['content'], 'shortcode, markdown');?></p>
             <p><b>Taggar:</b> <?=$info['tags']?></p>
         </div>
         <div class="user nounderline">
@@ -25,7 +26,7 @@
     <?php foreach ($comments as $comment) : ?>
         <?php $comt = $comment->getProperties();?>
         <?php if($comt['Pid'] == $info['id']) :?>
-            <p class='comment'><?=$comt['content']?></p>
+            <p class='comment'><?=$this->di->textFilter->doFilter($info['content'], 'shortcode, markdown');?></p>
         <?php endif; ?>
     <?php endforeach; ?>
 <?php endforeach; ?>
@@ -40,7 +41,7 @@
 <?php $info = $answer->getProperties();?>
     <form class='answer' method='post'>
         <div class="qcontent nounderline">
-            <p><?=$info['content']?></p>
+            <p><?=$this->di->textFilter->doFilter($info['content'], 'shortcode, markdown');?></p>
         </div>
         <div class="user nounderline">
             <img src="http://www.gravatar.com/avatar/774e706c6ba6b4270e562abe9e4c3a47.jpg?s=90&d=mm" alt="gravatar">
@@ -58,7 +59,7 @@
     <?php foreach ($comments as $comment) : ?>
         <?php $comt = $comment->getProperties();?>
         <?php if($comt['Pid'] == $info['id']) :?>
-            <p class='comment'><?=$comt['content']?></p>
+            <p class='comment'><?=$this->di->textFilter->doFilter($comt['content'], 'shortcode, markdown');?></p>
         <?php endif; ?>
     <?php endforeach; ?>
 <?php endforeach; ?>

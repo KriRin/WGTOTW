@@ -6,7 +6,7 @@
         <strong><?=$info['name']?></strong><br>
         <strong>E-post: </strong><?=$info['email']?><br>
         <strong>Webbsida: </strong><?=$info['web']?><br>
-        <p><?=$info['content']?></p>
+        <p><?=$this->di->textFilter->doFilter($info['content'], 'shortcode, markdown');?></p>
         <input type='hidden' name="redirect" value="<?=$this->url->create($this->request->getCurrentUrl())?>">
         <input type='hidden' name='page' value='<?= $page ?>'>
         <input class='commentbutton' type='submit' name='doUpdate' value='&#9998;' onClick="this.form.action = '<?=$this->url->create('comment/update/'.$info['id'])?>'"/>

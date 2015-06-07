@@ -15,7 +15,7 @@
     <div class="question">
         <div class="qcontent nounderline">
             <h3><a href="<?=$this->url->create('posts/viewQuestion/'.$info['id'])?>"><?=$info['title']?></a></h3>
-            <p><?=$info['content']?></p>
+            <p><?=$this->di->textFilter->doFilter($info['content'], 'shortcode, markdown');?></p>
             <span>Svar: <?=$ans?></span><br/>
             <span><b>Taggar:</b> <?=$info['tags']?></span>
         </div>
