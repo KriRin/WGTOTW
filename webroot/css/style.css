@@ -1,0 +1,218 @@
+/**
+ * General elements
+ */
+
+
+body {
+    color: #333;
+    font-family: arial, sans-serif;
+    overflow-y: scroll;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+.usertable td{
+    border-bottom: 1px solid;
+    line-height: 2.3em;
+    padding-right: 120px;
+    padding-left: 15px;
+}
+
+.usertable th{
+    border-bottom: 2px solid;
+    padding-right: 70px;
+}
+
+.usertable {
+    border-collapse:collapse;
+}
+
+.question {
+    padding-left: 10px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    height: 3em;
+}
+
+.user {
+    width: 6em;
+    float: right;
+    padding-top: 20px;
+}
+
+.qcontent {
+    float: left;
+}
+
+.answer {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid;
+    border-left: 1.5px solid;
+    height: 3em;
+}
+
+.nounderline a {
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.nounderline a:hover {
+    font-size: 104%;
+} 
+
+.loginbar {
+    background: #333333 none repeat scroll 0 0;
+    padding-right: 1%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: right;
+    color: white;
+}
+
+.answ_comtbutton {
+    border-radius: 5px;
+    float: right;
+    margin-top: 50px;
+    padding-right: 15px;
+}
+
+.tags {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.tags a {
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #337ab7;
+    padding: 0.5em;
+}
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+    margin: 0 auto;
+    width: 980px; 
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.sitelogo {
+        
+}
+
+.sitetitle {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    font-size: 48px;
+}
+
+.siteslogan {
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    font-style: italic;
+    color: #666;
+}
+
+
+
+/*******************************************
+ * layout for the comments
+ */
+.comments {
+    margin-bottom: 40px;
+}
+
+.comments p{
+    padding: 4px;
+}
+
+.comment {
+    border-bottom: 1px dashed grey;
+    padding-bottom: 1em;
+    margin: 0.7em;
+}
+
+
+
+.comfieldName {
+    padding-left: 80%;
+    font-size: 75%;
+    margin: 0;
+}
+.comfieldComment {
+    background-color: #E6E6E6;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+
+/**
+ * Layout for main
+ */
+#main {
+    min-height: 20em;
+}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+    margin-top: 40px;
+    border-top: 2px solid #ccc;
+    padding-top: 22px;
+    background-color: #D0D0D0;
+}
+
+.sitefooter {
+    color: #666;
+}
+
+
+/**
+ * For articles
+ */
+.article1 {
+    width: 900px;
+    padding-right: 1em;
+}
+
+.article1 h1,
+.article1 h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+.byline {
+    margin-top: 44px;
+    border-top: 1px dashed #ccc;
+    padding-top: 22px;
+    color: #666;
+}
+
+.byline p {
+    margin-top: 0;
+}
