@@ -8,7 +8,7 @@ This project is the final part of the course PHPMVC on BTH. The purpose was to c
 Installation
 ------------------
 
-You can either clone it: git clone https://github.com/eddo81/WGTOTW.git 
+You can either clone it: git clone https://github.com/KriRin/WGTOTW.git
 Or just download the zip-file.
 
 This project uses a MYSQL database. The connection settings is in: WGTOTW\app\config\db_config_mysql.php.
